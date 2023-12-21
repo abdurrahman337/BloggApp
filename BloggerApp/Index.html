@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Boktips & bokrecensioner</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Boktips & bokrecensioner</h1>
+      <h3>En blogg om böcker och läsning</h3>
+      <div id="blog-posts"></div>
+      <div id="post-form">
+        <h2>Lämna ett inlägg</h2>
+        <label for="title">Titel:</label>
+        <input type="text" id="title" required />
+        <label for="author">Avsändare:</label>
+        <input type="text" id="author" required />
+        <label for="content">Inlägg:</label>
+        <textarea id="content" required></textarea>
+        <button onclick="addPost()">Publicera</button>
+      </div>
+    </div>
+  </body>
+</html>
